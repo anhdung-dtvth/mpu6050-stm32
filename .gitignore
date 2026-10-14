@@ -1,0 +1,12 @@
+build
+mx.scratch
+!.settings
+__pycache__/
+*.pyc
+
+# Thư viện do CubeMX sinh ra / copy vào: không push.
+# Khôi phục bằng cách mở mpu6050.ioc trong CubeMX rồi Generate Code (xem docs/cubemx_setup.md).
+# Chỉ giữ lại driver tự viết Drivers/MPU6050.
+Drivers/*
+!Drivers/MPU6050/
+Middlewares/
